@@ -1,0 +1,14 @@
+name: Hello World
+on:
+  push:
+    branches: [ master ]
+jobs:
+  My-first-job:
+    name: My first job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print
+      env:
+        MY_VARIABLE: Hello World
+      run: |
+        echo $MY_VARIABLE.
